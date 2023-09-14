@@ -1,0 +1,40 @@
+<%-include('partials/header')  %>
+<%-include('partials/navbar')  %>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <h3 class="text-center">Crear publicación</h3>
+                <form action="#" id="form-guardar">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Título del post</label>
+                        <input type="text" id="titulo-post" class="form-control" placeholder="Título del Post">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Descripción</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                      </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Fecha</label>
+                        <input type="date" name="" class="form-control text-dark" id="fecha">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Imagen</label>
+                        <input type="text" class="form-control text-dark" id="url-img">
+                      </div>
+                      <div class="d-grid gap-2 col-6 mx-auto">
+                        <button type="submit" id="btn-guardar" class="btn btn-dark btn-lg">Guardar</button>
+                      </div>                  
+                  </form>
+            </div>
+        </div>
+    </div>       
+                   
+
+
+
+
+    <script src="/js/admin.js"></script>
+
+<%-include('partials/footer')  %>
